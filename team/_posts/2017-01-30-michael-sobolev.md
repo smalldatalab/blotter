@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Michael Sobolev
-position: Programmer/postdoc
+position: Programmer/Chief Scientist
 handle: jameshadfield
 twitter: jh_viz
 github: jameshadfield
