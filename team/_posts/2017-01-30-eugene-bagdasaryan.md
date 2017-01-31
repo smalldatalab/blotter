@@ -2,7 +2,7 @@
 layout: member
 title: Eugene Bagdasaryan
 position: PhD student
-handle: Eugene Bagdasaryan
+handle: ebagdasa
 github: ebagdasa
 image: /images/team/eugene.jpg
 email: ebagdasa@cs.cornell.edu
