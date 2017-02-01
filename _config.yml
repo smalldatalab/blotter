@@ -1,5 +1,5 @@
-name: Bedford Lab Research
-description: Science updates on evolution, epidemiology and immunology from the Bedford lab at the Fred Hutch
+name: the small data lab
+description: the small data lab research group
 url: http://127.0.0.1:4000
 
 markdown: redcarpet
@@ -58,7 +58,7 @@ exclude:
   - "projects/siv-cst/beast/main/empiricalTrees/xml/*"
   - "projects/siv-cst/beast/supplement/discreteTraits/xml/*"
   - "projects/siv-cst/beast/supplement/empiricalTrees/xml/*"
-# 
+#
 # projects:
 #   - trvrb/coaltrace
 #   - trvrb/stem
