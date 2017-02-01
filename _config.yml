@@ -58,8 +58,8 @@ exclude:
   - "projects/siv-cst/beast/main/empiricalTrees/xml/*"
   - "projects/siv-cst/beast/supplement/discreteTraits/xml/*"
   - "projects/siv-cst/beast/supplement/empiricalTrees/xml/*"
-
-projects:
-  - trvrb/coaltrace
-  - trvrb/stem
-  - trvrb/PACT
+# 
+# projects:
+#   - trvrb/coaltrace
+#   - trvrb/stem
+#   - trvrb/PACT
