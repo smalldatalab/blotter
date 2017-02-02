@@ -1,8 +1,8 @@
 ---
 layout: paper
-title: Your Activities of Daily Living (YADL): An Image-based Survey Technique for Patients with Arthritis
+title: "Your Activities of Daily Living (YADL): An Image-based Survey Technique for Patients with Arthritis"
 image:
-authors: Longqi Yang, Diana Freed, Alex Wu, Judy Wu, JP Pollak, Deborah Estrin
+authors: Longqi Yang, Diana Freed, Alex Wu, Judy Wu, JP Pollak, Deborah Estrin.
 year: 2016
 ref:
 journal: "10th International Conference on Pervasive Computing Technologies for Healthcare"
