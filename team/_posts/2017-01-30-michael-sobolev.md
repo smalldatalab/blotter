@@ -1,16 +1,18 @@
 ---
 layout: member
 title: Michael Sobolev
-position: Programmer/Chief Scientist
-handle: jameshadfield
-twitter: jh_viz
-github: jameshadfield
+position: Visiting PhD Student
+handle: sobolevmic
+twitter: sobolevmic
+github: sobolevmic
 scholar: bgbbikoAAAAJ
-image: /images/team/james-hadfield.jpg
+image: /images/team/michael-sobolev.jpg
 ---
 
-I'm Trevor's new programmer / postdoc at the [Fred Hutch](http://www.fredhutch.org/) working on [nextstrain](http://nextstrain.org) and [nextflu](http://nextflu.org), including a mixture of programming, data visualization, modeling, phylogenetics and forward prediction.
+I'm doing my PhD in Behavioral Economics at the Technion under the supervisior or [Ido Erev](https://web.iem.technion.ac.il/en/people/userprofile/erev.html). Since Aug 16 I'm a viisiting the small data lab and collaboration on projects that bridge behavioral economics and computer scicence. 
 
-I received my BSc(hons) in mathematics from Canterbury University, New Zealand and my PhD in bacterial genomics from the [Sanger Institute](http://www.sanger.ac.uk/) (University of Cambridge) supervised by [Julian Parkhill](http://www.sanger.ac.uk/people/directory/parkhill-julian) and [Nick Thomson](http://www.sanger.ac.uk/people/directory/thomson-nicholas-robert). I've previously worked in virology with [Arvind Varsani](https://biodesign.asu.edu/arvind-varsani) and in RNA bioinformatics with [Paul Gardner](http://www.biol.canterbury.ac.nz/people/gardner.shtml).
+My hobbies include coffee breaks, drinking beer and playing poker.
 
-During my PhD I built [phandango](https://github.com/jameshadfield/phandango), a web-based visualization tool for interpreting the genomics of bacterial populations.
+
+
+
