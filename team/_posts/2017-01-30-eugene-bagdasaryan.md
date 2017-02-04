@@ -6,6 +6,8 @@ handle: ebagdasa
 github: ebagdasa
 image: /images/team/eugene.jpg
 email: ebagdasa@cs.cornell.edu
+org: sdl
+level: phd
 ---
 
 I am a 1st year PhD student doing Computer Science. My interests include cloud computing, personal assistants, machine learning.

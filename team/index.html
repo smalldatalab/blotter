@@ -8,7 +8,7 @@ categories:
 <div class="row">
 	<div class="col-md-12">
 		<div class="title">
-			Current members
+			Leadership
 		</div>
 	</div>
 </div>
@@ -16,9 +16,9 @@ categories:
 <div class="bigspacer"></div>
 
 {% for member in site.categories.team reversed %}
-	{% if member.alumni != true %}
+	{% if member.level == "leaders" %}
     {% cycle 'add rows': '<div class="row">', nil, nil %}
-		<div class="col-md-4 memberbox">
+		<div class="col-sm-4 memberbox">
 			<div class="media">
   				<a class="pull-left" href="{{ member.url }}">
     				<img width=160 class="media-object" src="{{ member.image }}">
@@ -34,12 +34,12 @@ categories:
     {% cycle 'close rows': nil, nil, '</div>' %}
     {% endif %}
 {% endfor %}
-{% cycle 'close rows': nil, '</div>', '</div>' %}
+<!-- {% cycle 'close rows': nil, '</div>', '</div>' %} -->
 
 <div class="row">
 	<div class="col-md-12">
 		<div class="title">
-			Past members
+			PhD students
 		</div>
 	</div>
 </div>
@@ -47,23 +47,113 @@ categories:
 <div class="bigspacer"></div>
 
 {% for member in site.categories.team reversed %}
-	{% if member.alumni == true %}
-    {% cycle 'add rows 2': '<div class="row">', nil, nil %}
-		<div class="col-md-4 memberbox">
+	{% if member.level == "phd" %}
+    <!-- {% cycle 'add rows': '<div class="row">', nil, nil %} -->
+		<div class="col-sm-4 memberbox">
 			<div class="media">
-  				<!--
   				<a class="pull-left" href="{{ member.url }}">
-    				<img width=160 class="media-object" src="{{ member.image }}">
+    				<img width=140 class="media-object" src="{{ member.image }}">
   				</a>
-  				-->
  			 	<div class="media-body">
     				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
     				<p class="note">{{ member.position }}</p>
-  				</div>
+				</div>
 			</div>
+      <div class="bigspacer"></div>
 			<div class="bigspacer"></div>
-        </div>
-    {% cycle 'close rows 2': nil, nil, '</div>' %}
+    </div>
+    <!-- {% cycle 'close rows': nil, nil, '</div>' %} -->
     {% endif %}
 {% endfor %}
-{% cycle 'close rows 2': nil, '</div>', '</div>' %}
+<!-- {% cycle 'close rows': nil, '</div>', '</div>' %} -->
+
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="title">
+			Foundry
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+{% for member in site.categories.team reversed %}
+	{% if member.level == "foundry" %}
+    <!-- {% cycle 'add rows': '<div class="row">', nil, nil %} -->
+		<div class="col-sm-4 memberbox">
+			<div class="media">
+  				<a class="pull-left" href="{{ member.url }}">
+    				<img width=140 class="media-object" src="{{ member.image }}">
+  				</a>
+ 			 	<div class="media-body">
+    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+    				<p class="note">{{ member.position }}</p>
+				</div>
+			</div>
+      <div class="bigspacer"></div>
+			<div class="bigspacer"></div>
+    </div>
+    <!-- {% cycle 'close rows': nil, nil, '</div>' %} -->
+    {% endif %}
+{% endfor %}
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="title">
+			Masters
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+{% for member in site.categories.team reversed %}
+	{% if member.level == "masters" %}
+    <!-- {% cycle 'add rows': '<div class="row">', nil, nil %} -->
+		<div class="col-sm-4 memberbox">
+			<div class="media">
+  				<a class="pull-left" href="{{ member.url }}">
+    				<img width=140 class="media-object" src="{{ member.image }}">
+  				</a>
+ 			 	<div class="media-body">
+    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+    				<p class="note">{{ member.position }}</p>
+				</div>
+			</div>
+      <div class="bigspacer"></div>
+			<div class="bigspacer"></div>
+    </div>
+    <!-- {% cycle 'close rows': nil, nil, '</div>' %} -->
+    {% endif %}
+{% endfor %}
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="title">
+			Members
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+{% for member in site.categories.team reversed %}
+	{% if member.level == "idk" %}
+    <!-- {% cycle 'add rows': '<div class="row">', nil, nil %} -->
+		<div class="col-sm-4 memberbox">
+			<div class="media">
+  				<a class="pull-left" href="{{ member.url }}">
+    				<img width=140 class="media-object" src="{{ member.image }}">
+  				</a>
+ 			 	<div class="media-body">
+    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+    				<p class="note">{{ member.position }}</p>
+				</div>
+			</div>
+      <div class="bigspacer"></div>
+			<div class="bigspacer"></div>
+    </div>
+    <!-- {% cycle 'close rows': nil, nil, '</div>' %} -->
+    {% endif %}
+{% endfor %}
