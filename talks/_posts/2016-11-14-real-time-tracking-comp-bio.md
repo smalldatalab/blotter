@@ -1,9 +1,9 @@
 ---
 layout: talk_reveal3
-title: Real-time molecular epidemiology and evolutionary analysis of emerging epidemics
-venue: Fred Hutch
-event: Comp Bio Faculty Seminar
-author: Trevor Bedford
+title: Magic mirror and Alexa
+venue: Cornell Tech Foundry
+event: Foundry and Small Data Week
+author: Longqi Yang
 draft: true
 ---
 
@@ -13,7 +13,7 @@ draft: true
 	<h2 class="title">{{ page.title }}</h2>
 	<br>
 	<p class="title">
-	Trevor Bedford (@trvrb)
+	Longqi Yang (@trvrb)
 	<br>
 	{{ page.date | date: "%-d %b %Y" }}
 	<br>
@@ -210,7 +210,7 @@ draft: true
 
 <section>
 	<h2><a href="https://github.com/nextstrain/auspice">Auspice</a></h2>
-	<p>React / D3 visualization of resulting trees</p>	
+	<p>React / D3 visualization of resulting trees</p>
 	<p class="smaller"><i>
 	with Colin Megill and Richard Neher
 	</i></p>

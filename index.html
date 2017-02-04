@@ -6,68 +6,47 @@ categories:
 ---
 
 <div class="row">
-	<div class="col-md-12">
+	<div class="col-md-8">
 		<object class="pull-left biglogo" data="/images/sdl_logo.png" type="image/png"></object>
 		<div class="bigtitle logobox">
 			the small data lab
 		</div>
+    <h1>
+    <strong>
+      You + Your Data
+    </strong>
+    </h1>
+
+	</div>
+	<div class="col-md-4">
+		<div class="">
+		<object style="width: 250px; height: 200px" class="pull-right biglogo" data="/images/papers/cikm15.png" type="image/png"></object>
+		</div>
+	</div>
+
+</div>
+
+<div class="row">
+	<div class="col-sm-5">
+    <h2>
+    We’re creating the apps and infrastructure to put your small data to good use for you.
+    </h2>
+	</div>
+
+	<div class="col-sm-1">
+	</div>
+
+	<div class="col-sm-3">
+		<object style="width: 300px; height: 200px;" class="pull-right biglogo" data="/images/papers/www17a.png" type="image/png"></object>
+	</div>
+
+	<div class="col-sm-3">
+		<object style="width: 300px; height: 200px" class="pull-right biglogo" data="/images/papers/www17b.png" type="image/png"></object>
 	</div>
 </div>
 
 <div class="bigspacer"></div>
-
-<div class="row">
-	<div class="col-md-12">
-		<div class="smallhead">
-			The small data lab ....
-		</div>
-	</div>
-</div>
-
 <div class="bigspacer"></div>
-<div class="bigspacer"></div>
-
-<div class="row">
-	<div class="col-md-12">
-		<div class="head">
-			<a class="off" href="/blog/">Recent posts</a>
-		</div>
-		<div class="spacer"></div>
-	</div>
-</div>
-
-<div class="row">
-	{% for post in site.categories.blog limit:4 %}
-
-	{% for member in site.categories.team %}
-		{% if member.title == post.author %}
-			{% assign author = member %}
-		{% endif %}
-	{% endfor %}
-
-	<div class="col-md-3 reduced-gutter">
-		<div class="pad-left">
-			<div class="note">
-				<i class="fa fa-comment-o fa-fw"></i>
-				<a class="off" href="{{ post.url }}">
-				{{ post.title }}
-				</a>
-			</div>
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-				Posted
-				{{ post.date | date: "%-d %b %Y" }}
-				{% if author %}
-				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
-				{% endif %}
-			</div>
-			<div class="bigspacer"></div>
-		</div>
-	</div>
-	{% endfor %}
-</div>
-
-<div class="spacer"></div>
 
 <div class="row">
 	<div class="col-md-12">
@@ -100,7 +79,7 @@ categories:
 </div>
 
 <div class="spacer"></div>
-
+<!--
 <div class="row">
 	<div class="col-md-12">
 		<div class="head">
@@ -136,9 +115,9 @@ categories:
 	</div>
 	{% endfor %}
 </div>
-
+ -->
 <div class="spacer"></div>
-
+<!--
 <div class="row">
 	<div class="col-md-12">
 		<div class="head">
@@ -147,7 +126,7 @@ categories:
 		<div class="spacer"></div>
 	</div>
 </div>
-
+ -->
 <div class="row">
 	<div class="col-md-12 reduced-gutter">
 		<div class="pad-left">
@@ -161,7 +140,7 @@ categories:
 					<i class="fa fa-angle-right"></i> <a class="off" href="/talks/">Talks</a>
 				</li>
 				<li class="footernav">
-					<i class="fa fa-angle-right"></i> <a class="off" href="http://www.fredhutch.org/">Fred Hutch</a>
+					<i class="fa fa-angle-right"></i> <a class="off" href="http://destrin.smalldata.io/">Deborah Estrin</a>
 				</li>
 			</ul>
 		</div>
