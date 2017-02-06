@@ -6,6 +6,7 @@ handle: hongyi wen
 github: hongyii
 image: /images/team/hongyi.jpg
 email: vennhy@gmail.com
+org:sdl
 level: phd
 ---
 I'm a first-year Information Science PhD student, interested in leveraging novel technologies to solve problems in health-related domains. Particularly I'm interested in Mobile Health, Natural Language Processing and Human-Computer Interaction.
