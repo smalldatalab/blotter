@@ -6,24 +6,17 @@ categories:
 ---
 
 <div class="row">
-	<div class="col-md-8">
-		<object class="pull-left biglogo" data="/images/sdl_logo.png" type="image/png"></object>
-		<div class="bigtitle logobox">
-			the small data lab
-		</div>
-    <h1>
+    <div class="col-md-8">
+        <object class="pull-left biglogo" data="/images/sdl_logo.png" type="image/png"></object>
+        <div class="bigtitle logobox">
+            the small data lab
+
+            <h2>
     <strong>
       You + Your Data
     </strong>
     </h1>
-
-	</div>
-	<div class="col-md-4">
-		<div class="">
-      <a href="/papers/cikm2015">
-  		<object style="width: 250px; height: 200px" class="pull-right biglogo" data="/images/papers/cikm15.png" type="image/png"></object>
-      </a>
-		</div>
+</div>
 	</div>
 
 </div>
@@ -33,59 +26,55 @@ categories:
     <h2>
     We’re creating the apps and infrastructure to put your small data to good use for you.
     </h2>
-	</div>
+        </div>
 
-	<div class="col-sm-1">
-	</div>
+        <div class="col-sm-1">
+        </div>
 
-	<div class="col-sm-3" >
-    <a href="/papers/www2017a">
-		<object class="pull-right project" data="/images/papers/www17a.png" type="image/png"></object>
-    </a>
-	</div>
+        <div class="col-sm-3">
 
-	<div class="col-sm-3" >
-    <a href="/papers/www2017b">
-		<object class="pull-right project" data="/images/papers/www17b.png" type="image/png"></object>
-    </a>
-	</div>
-</div>
+        </div>
 
-<div class="bigspacer"></div>
-<div class="bigspacer"></div>
+    </div>
 
-<div class="row">
-	<div class="col-md-12">
-		<div class="head">
-			<a class="off" href="/papers/">Recent papers</a>
-		</div>
-		<div class="spacer"></div>
-	</div>
-</div>
+    <div class="bigspacer"></div>
+    <div class="bigspacer"></div>
 
-<div class="row">
-	{% for paper in site.categories.papers limit:4 %}
-	<div class="col-md-3 reduced-gutter">
-		<div class="pad-left">
-			<div class="note">
-				<i class="fa fa-file-text-o fa-fw"></i>
-				<a class="off" href="{{ paper.url }}">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="head">
+                <a class="off" href="/papers/">Recent papers</a>
+            </div>
+            <div class="spacer"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        {% for paper in site.categories.papers limit:3 %}
+        <div class="col-md-3 reduced-gutter">
+            <div class="pad-left">
+                <div class="note">
+                    <i class="fa fa-file-text-o fa-fw"></i>
+                    <a class="off" href="{{ paper.url }}">
 				{{ paper.title }}
 				</a>
-			</div>
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-				Posted
-				{{ paper.date | date: "%-d %b %Y" }}
-			</div>
-			<div class="bigspacer"></div>
-		</div>
-	</div>
-	{% endfor %}
-</div>
+                </div>
+                <div class="smallspacer"></div>
+                <div class="smallnote">
+                    Posted {{ paper.date | date: "%-d %b %Y" }}
+                </div>
+                <div class="bigspacer"></div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="col-md-3 reduced-gutter">
+            <a class="twitter-timeline" data-lang="en" data-width="300" data-height="400" href="https://twitter.com/Destrin">Tweets by Destrin</a>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
 
-<div class="spacer"></div>
-<!--
+    <div class="spacer"></div>
+    <!--
 <div class="row">
 	<div class="col-md-12">
 		<div class="head">
@@ -122,8 +111,8 @@ categories:
 	{% endfor %}
 </div>
  -->
-<div class="spacer"></div>
-<!--
+    <div class="spacer"></div>
+    <!--
 <div class="row">
 	<div class="col-md-12">
 		<div class="head">
@@ -133,23 +122,23 @@ categories:
 	</div>
 </div>
  -->
-<div class="row">
-	<div class="col-md-12 reduced-gutter">
-		<div class="pad-left">
-			<ul class="list-inline">
-				{% for page in site.categories.misc %}
-				<li class="footernav">
-					<i class="fa fa-angle-right"></i> <a class="off" href="{{ page.url }}">{{ page.title }}</a>
-				</li>
-				{% endfor %}
-				<li class="footernav">
-					<i class="fa fa-angle-right"></i> <a class="off" href="/talks/">Talks</a>
-				</li>
-				<li class="footernav">
-					<i class="fa fa-angle-right"></i> <a class="off" href="http://destrin.smalldata.io/">Deborah Estrin</a>
-				</li>
-			</ul>
-		</div>
-		<div class="spacer"></div>
-	</div>
-</div>
+    <div class="row">
+        <div class="col-md-12 reduced-gutter">
+            <div class="pad-left">
+                <ul class="list-inline">
+                    {% for page in site.categories.misc %}
+                    <li class="footernav">
+                        <i class="fa fa-angle-right"></i> <a class="off" href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
+                    {% endfor %}
+                    <li class="footernav">
+                        <i class="fa fa-angle-right"></i> <a class="off" href="/talks/">Talks</a>
+                    </li>
+                    <li class="footernav">
+                        <i class="fa fa-angle-right"></i> <a class="off" href="http://destrin.smalldata.io/">Deborah Estrin</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="spacer"></div>
+        </div>
+    </div>

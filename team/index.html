@@ -6,183 +6,169 @@ categories:
 ---
 
 <div class="row">
-	<div class="col-md-12">
-		<div class="title">
-			Leadership
-		</div>
-	</div>
-</div>
-
-<div class="bigspacer"></div>
-
-{% for member in site.categories.team reversed %}
-	{% if member.level == "leaders" %}
-    {% cycle 'add rows': '<div class="row">', nil, nil %}
-		<div class="col-sm-4 memberbox">
-			<div class="media">
-  				<a class="pull-left" href="{{ member.url }}">
-    				<img width=160 class="media-object" src="{{ member.image }}">
-  				</a>
- 			 	<div class="media-body">
-    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}</p>
-  				</div>
-			</div>
-			<div class="bigspacer"></div>
-			<div class="bigspacer"></div>
+    <div class="col-md-12">
+        <div class="title">
+            Advisors
         </div>
-    {% cycle 'close rows': nil, nil, '</div>' %}
-    {% endif %}
-{% endfor %}
+    </div>
+</div>
+
+<div class="bigspacer"></div>
+
+{% for member in site.categories.team reversed %} {% if member.level == "leaders" %} {% cycle 'add rows': '
+<div class="row">', nil, nil %}
+    <div class="col-sm-4 memberbox">
+        <div class="media">
+            <a class="pull-left" href="{{ member.url }}">
+                <img width=160 class="media-object" src="{{ member.image }}">
+            </a>
+            <div class="media-body">
+                <div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+                <p class="note">{{ member.position }}</p>
+            </div>
+        </div>
+        <div class="bigspacer"></div>
+        <div class="bigspacer"></div>
+    </div>
+    {% cycle 'close rows': nil, nil, '</div>' %} {% endif %} {% endfor %}
 <!-- {% cycle 'close rows': nil, '</div>', '</div>' %} -->
 
 <div class="row">
-	<div class="col-md-12">
-		<div class="title">
-			PhD students
-		</div>
-	</div>
+    <div class="col-md-12">
+        <div class="title">
+            PhD students
+        </div>
+    </div>
 </div>
 
 <div class="bigspacer"></div>
 
-{% for member in site.categories.team reversed %}
-	{% if member.level == "phd" %}
-    <!-- {% cycle 'add rows': '<div class="row">', nil, nil %} -->
-		<div class="col-sm-4 memberbox">
-			<div class="media">
-  				<a class="pull-left" href="{{ member.url }}">
-    				<img width=140 class="media-object" src="{{ member.image }}">
-  				</a>
- 			 	<div class="media-body">
-    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}</p>
-				</div>
-			</div>
-      <div class="bigspacer"></div>
-			<div class="bigspacer"></div>
+{% for member in site.categories.team reversed %} {% if member.level == "phd" %}
+<!-- {% cycle 'add rows': '<div class="row">', nil, nil %} -->
+<div class="col-sm-4 memberbox">
+    <div class="media">
+        <a class="pull-left" href="{{ member.url }}">
+            <img width=140 class="media-object" src="{{ member.image }}">
+        </a>
+        <div class="media-body">
+            <div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+            <p class="note">{{ member.position }}</p>
+        </div>
     </div>
-    <!-- {% cycle 'close rows': nil, nil, '</div>' %} -->
-    {% endif %}
-{% endfor %}
+    <div class="bigspacer"></div>
+    <div class="bigspacer"></div>
+</div>
+<!-- {% cycle 'close rows': nil, nil, '</div>' %} -->
+{% endif %} {% endfor %}
 <!-- {% cycle 'close rows': nil, '</div>', '</div>' %} -->
 
 
 <div class="row">
-	<div class="col-md-12">
-		<div class="title">
-			Foundry
-		</div>
-	</div>
+    <div class="col-md-12">
+        <div class="title">
+            Foundry
+        </div>
+    </div>
 </div>
 
 <div class="bigspacer"></div>
 
-{% for member in site.categories.team reversed %}
-	{% if member.level == "foundry" %}
-    <!-- {% cycle 'add rows': '<div class="row">', nil, nil %} -->
-		<div class="col-sm-4 memberbox">
-			<div class="media">
-  				<a class="pull-left" href="{{ member.url }}">
-    				<img width=140 class="media-object" src="{{ member.image }}">
-  				</a>
- 			 	<div class="media-body">
-    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}</p>
-				</div>
-			</div>
-      <div class="bigspacer"></div>
-			<div class="bigspacer"></div>
+{% for member in site.categories.team reversed %} {% if member.level == "foundry" %}
+<!-- {% cycle 'add rows': '<div class="row">', nil, nil %} -->
+<div class="col-sm-4 memberbox">
+    <div class="media">
+        <a class="pull-left" href="{{ member.url }}">
+            <img width=140 class="media-object" src="{{ member.image }}">
+        </a>
+        <div class="media-body">
+            <div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+            <p class="note">{{ member.position }}</p>
+        </div>
     </div>
-    <!-- {% cycle 'close rows': nil, nil, '</div>' %} -->
-    {% endif %}
-{% endfor %}
+    <div class="bigspacer"></div>
+    <div class="bigspacer"></div>
+</div>
+<!-- {% cycle 'close rows': nil, nil, '</div>' %} -->
+{% endif %} {% endfor %}
 
 <div class="row">
-	<div class="col-md-12">
-		<div class="title">
-			Masters
-		</div>
-	</div>
+    <div class="col-md-12">
+        <div class="title">
+            Masters
+        </div>
+    </div>
 </div>
 
 <div class="bigspacer"></div>
 
-{% for member in site.categories.team reversed %}
-	{% if member.level == "masters" %}
-    <!-- {% cycle 'add rows': '<div class="row">', nil, nil %} -->
-		<div class="col-sm-4 memberbox">
-			<div class="media">
-  				<a class="pull-left" href="{{ member.url }}">
-    				<img width=140 class="media-object" src="{{ member.image }}">
-  				</a>
- 			 	<div class="media-body">
-    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}</p>
-				</div>
-			</div>
-      <div class="bigspacer"></div>
-			<div class="bigspacer"></div>
+{% for member in site.categories.team reversed %} {% if member.level == "masters" %}
+<!-- {% cycle 'add rows': '<div class="row">', nil, nil %} -->
+<div class="col-sm-4 memberbox">
+    <div class="media">
+        <a class="pull-left" href="{{ member.url }}">
+            <img width=140 class="media-object" src="{{ member.image }}">
+        </a>
+        <div class="media-body">
+            <div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+            <p class="note">{{ member.position }}</p>
+        </div>
     </div>
-    <!-- {% cycle 'close rows': nil, nil, '</div>' %} -->
-    {% endif %}
-{% endfor %}
+    <div class="bigspacer"></div>
+    <div class="bigspacer"></div>
+</div>
+<!-- {% cycle 'close rows': nil, nil, '</div>' %} -->
+{% endif %} {% endfor %}
 
 <div class="row">
-	<div class="col-md-12">
-		<div class="title">
-			Members
-		</div>
-	</div>
+    <div class="col-md-12">
+        <div class="title">
+            Members
+        </div>
+    </div>
 </div>
 
 <div class="bigspacer"></div>
 
-{% for member in site.categories.team reversed %}
-	{% if member.level == "idk" %}
-    <!-- {% cycle 'add rows': '<div class="row">', nil, nil %} -->
-		<div class="col-sm-4 memberbox">
-			<div class="media">
-  				<a class="pull-left" href="{{ member.url }}">
-    				<img width=140 class="media-object" src="{{ member.image }}">
-  				</a>
- 			 	<div class="media-body">
-    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}</p>
-				</div>
-			</div>
-      <div class="bigspacer"></div>
-			<div class="bigspacer"></div>
+{% for member in site.categories.team reversed %} {% if member.level == "idk" %}
+<!-- {% cycle 'add rows': '<div class="row">', nil, nil %} -->
+<div class="col-sm-4 memberbox">
+    <div class="media">
+        <a class="pull-left" href="{{ member.url }}">
+            <img width=140 class="media-object" src="{{ member.image }}">
+        </a>
+        <div class="media-body">
+            <div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+            <p class="note">{{ member.position }}</p>
+        </div>
     </div>
-    <!-- {% cycle 'close rows': nil, nil, '</div>' %} -->
-    {% endif %}
-{% endfor %}
+    <div class="bigspacer"></div>
+    <div class="bigspacer"></div>
+</div>
+<!-- {% cycle 'close rows': nil, nil, '</div>' %} -->
+{% endif %} {% endfor %}
 
 <div class="row">
-	<div class="col-md-12">
-		<div class="title">
-			Former Members
-		</div>
-	</div>
+    <div class="col-md-12">
+        <div class="title">
+            Former Members
+        </div>
+    </div>
 </div>
 
-{% for member in site.categories.team reversed %}
-	{% if member.level == "former_member" %}
-    <!-- {% cycle 'add rows': '<div class="row">', nil, nil %} -->
-		<div class="col-sm-4 memberbox">
-			<div class="media">
-  				<a class="pull-left" href="{{ member.url }}">
-    				<img width=140 class="media-object" src="{{ member.image }}">
-  				</a>
- 			 	<div class="media-body">
-    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}</p>
-				</div>
-			</div>
-      <div class="bigspacer"></div>
-			<div class="bigspacer"></div>
+{% for member in site.categories.team reversed %} {% if member.level == "former_member" %}
+<!-- {% cycle 'add rows': '<div class="row">', nil, nil %} -->
+<div class="col-sm-4 memberbox">
+    <div class="media">
+        <a class="pull-left" href="{{ member.url }}">
+            <img width=140 class="media-object" src="{{ member.image }}">
+        </a>
+        <div class="media-body">
+            <div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+            <p class="note">{{ member.position }}</p>
+        </div>
     </div>
-    <!-- {% cycle 'close rows': nil, nil, '</div>' %} -->
-    {% endif %}
-{% endfor %}
-
+    <div class="bigspacer"></div>
+    <div class="bigspacer"></div>
+</div>
+<!-- {% cycle 'close rows': nil, nil, '</div>' %} -->
+{% endif %} {% endfor %}
